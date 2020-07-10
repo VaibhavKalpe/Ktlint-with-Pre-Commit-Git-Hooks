@@ -1,0 +1,3 @@
+<resources>
+    <string name="app_name">Ktlint with Pre-Commit Git Hooks</string>
+</resources>

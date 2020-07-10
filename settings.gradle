@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Ktlint with Pre-Commit Git Hooks"
