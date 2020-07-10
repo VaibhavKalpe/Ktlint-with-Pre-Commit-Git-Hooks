@@ -6,10 +6,8 @@ configurations {
     ktlint
 }
 
-ext.ktlintVersion = '0.37.2'
-
 dependencies {
-    ktlint "com.pinterest:ktlint:$ext.ktlintVersion"
+    ktlint "com.pinterest:ktlint:$rootProject.ext.ktlintVersion"
 }
 
 task ktlint(type: JavaExec, group: "verification") {

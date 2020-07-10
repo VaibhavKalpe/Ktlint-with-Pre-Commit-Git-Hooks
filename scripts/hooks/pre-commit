@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "================================================="
+echo "Ktlint: running pre-commit hook for code style..."
+echo "================================================="
+
+./gradlew ktlint
+RESULT=$? 
+        
+if [ $RESULT -ne 0 ]; then
+        echo "================================================="
+        echo "FAIL: resolve code style issues to commit."
+        echo "================================================="
+        exit 1
+else
+        echo "================================================="
+        echo "SUCCESS: proceeding to commit..."
+        echo "================================================="
+fi
